@@ -1,0 +1,26 @@
+1. computer the num of 0 about n!.
+In order to computer the num of 0, we need to count how many 2 and 5.
+well, the problem can be change to count how many 5;
+
+public int countFactZeros(int num){
+	if (num < 0) return -1;
+	int count = 0;
+	for(int i = 5; num/i > 0; i*=5) {
+		count += num/i;
+	}
+	rteurn count;
+}
+
+2.calculate the lowest 1' bit of n! in binary.
+the lowest 1' bit means the num of 2 plus 1;
+
+
+3.caculate the total number of bits in n!.
+ (int) (log10(1) + log(10)2 + ... + log(10)(n))+1
+
+eg:
+ in c file:
+ 1.#include<math.h>
+ 2.sum += log10(i)
+ 3.(int)ceil(sum)
+

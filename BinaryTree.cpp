@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <vector>
+#include <queue>
 
 using namespace std;
 
@@ -13,7 +14,7 @@ struct TreeNode{
 TreeNode * CreateBitTree(){
 	int data;
 	scanf("%d",&data);
-	if(data == 0) 
+	if(data == 0)
 		return NULL;
 	else{
 		TreeNode *tmp = new TreeNode();
@@ -37,10 +38,10 @@ int getDepth(TreeNode * root){
 void preorder(TreeNode * root){
 	if(root != NULL){
 		cout << root->val << " ";
-		
+
 		preorder(root->left);
 		preorder(root->right);
-	}		
+	}
 }
 
 void print(vector<int> vc){
@@ -52,7 +53,17 @@ void print(vector<int> vc){
 }
 
 void levelTraverse(TreeNode * root){
-	
+    queue<node*> qe;
+    qe.push(root);
+
+    while(!qe.empty()){
+        node* tmp = qe.top();
+        qe.pop();
+
+        if(tmp->left) {
+
+        }
+    }
 }
 int main(){
 	int n;
@@ -61,8 +72,8 @@ int main(){
 	//preorder(bt);
 	//int nodecnt = countNode(bt);
 	//int depth = getDepth(bt);
-	
-	
+
+
 	return 0;
 }
 

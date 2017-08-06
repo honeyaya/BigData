@@ -1,0 +1,14 @@
+1. sort
+http://wuchong.me/blog/2014/02/09/algorithm-sort-summary/
+
+2.linkedlist
+http://blog.csdn.net/luckyxiaoqiang/article/details/7393134
+
+3.BinarySearch
+http://blog.csdn.net/luckyxiaoqiang/article/details/8937978
+
+4.BinaryTree
+http://blog.csdn.net/luckyxiaoqiang/article/details/7518888
+
+5. regax
+http://wuchong.me/blog/2014/07/02/learn-regular-expressions/
